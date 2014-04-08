@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d8f563-a098-48fb-a4cb-9725f86c7923" name="UMLClassDiagram" linkedPackageId="0c520961-977c-495e-ab4b-4b5f740f1c5e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="fed78436-e063-49c4-98e6-fa429d9f09cf">
+      <profileInstance Id="a7a8dd06-2538-4ab3-b3e4-22e7d5856b5b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6a892945-4b07-497a-aaa2-59088f59b6b9">
+      <profileInstance Id="2733882a-703a-4fda-814e-c9cbcec7ebf8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="86513137-100e-4642-9f55-c03125b8bef8" name="SuperCar.Core.Entities">
+        <elementDefinition Id="81b6cee1-1e8a-4a1c-91bb-e906fdee9ff6" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="616ff213-2e48-4544-a575-71a368d4e433" name="Player" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="95a7a66a-d181-4909-a170-304e8bdb92e1" />
+              <targetEnds>
+                <association Id="3eaf560b-a08e-494b-b080-33cdaed1e8df" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Car" isLeaf="false" name="Has a" isAbstract="false">
+                  <classMoniker Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" LastKnownName="Car" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="04a854c4-649e-4fe0-a55d-a9636ddff91c" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="e656d52e-839e-447a-9e85-3b322092677c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="469a3346-3a7b-4fe0-9146-ca30894d3b28" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="b08785f8-b27c-4ddd-97c9-84c013051e19" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="cb46b298-48fe-4c13-9081-3845f5b0b706" name="AIPlayer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="55d76e63-9897-405c-ad55-c76e84822190" />
+              <generalsInternal>
+                <generalization Id="663c3c10-f61d-49b3-b2ca-c7e269b6d065" isSubstitutable="false">
+                  <classMoniker Id="616ff213-2e48-4544-a575-71a368d4e433" LastKnownName="Player" />
+                  <elementDefinition Id="a31a64c3-ae4a-4731-8d43-1f27da6ce58a" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d5395cb0-4f82-4539-8ebf-c9246498b1fe" name="HumanPlayer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ff84fb07-0b3b-4427-9bc9-d87fc839cd66" />
+              <generalsInternal>
+                <generalization Id="49a59f7b-b5e2-4060-a286-0212dd7cba6e" isSubstitutable="false">
+                  <classMoniker Id="616ff213-2e48-4544-a575-71a368d4e433" LastKnownName="Player" />
+                  <elementDefinition Id="07d5a68d-4875-4f9c-8ced-510a234fa9b2" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="0c520961-977c-495e-ab4b-4b5f740f1c5e" name="ModelingProject">
+    <elementDefinition Id="5f4d58e4-6075-48d9-a5e2-c01ff78390d2" />
+  </package>
+</logicalClassDesignerModel>

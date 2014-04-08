@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="81b6cee1-1e8a-4a1c-91bb-e906fdee9ff6"
+  name="SuperCar.Core.Entities" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="95a7a66a-d181-4909-a170-304e8bdb92e1"
+        name="Player"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b08785f8-b27c-4ddd-97c9-84c013051e19"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Car"
+            isLeaf="false"
+            name="Has a"
+            isAbstract="false">
+            <classMoniker
+              Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
+              LastKnownName="Car"
+              LastKnownLocation="Package_2154.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e656d52e-839e-447a-9e85-3b322092677c"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad"
+                  name="Car"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
+        name="Car"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="55d76e63-9897-405c-ad55-c76e84822190"
+        name="AIPlayer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a31a64c3-ae4a-4731-8d43-1f27da6ce58a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="95a7a66a-d181-4909-a170-304e8bdb92e1"
+              LastKnownName="Player"
+              LastKnownLocation="Package_2154.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ff84fb07-0b3b-4427-9bc9-d87fc839cd66"
+        name="HumanPlayer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="07d5a68d-4875-4f9c-8ced-510a234fa9b2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="95a7a66a-d181-4909-a170-304e8bdb92e1"
+              LastKnownName="Player"
+              LastKnownLocation="Package_2154.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
