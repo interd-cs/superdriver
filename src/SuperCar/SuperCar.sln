@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{08A66D81-C76E-4463-80F9-054C25953AD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{1356E3BD-3445-46DD-BB7C-FE32F58D768B}"
@@ -11,8 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architectur
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{73F0A2F6-8B73-44F1-A1DC-17AAA8281ED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperCar.Core", "SuperCar.Core\SuperCar.Core.csproj", "{81ADA6A9-BCBC-4951-B905-CC6184F90944}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81ADA6A9-BCBC-4951-B905-CC6184F90944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81ADA6A9-BCBC-4951-B905-CC6184F90944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81ADA6A9-BCBC-4951-B905-CC6184F90944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81ADA6A9-BCBC-4951-B905-CC6184F90944}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81ADA6A9-BCBC-4951-B905-CC6184F90944} = {1356E3BD-3445-46DD-BB7C-FE32F58D768B}
 	EndGlobalSection
 EndGlobal
