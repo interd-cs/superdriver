@@ -3,6 +3,18 @@
   dslVersion="1.0.0.0"
   Id="5f4d58e4-6075-48d9-a5e2-c01ff78390d2"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="6cf190bd-9728-42d8-b621-4b36a096ee40">
+      <body>Figure out, how will we do this?</body>
+      <annotatedElements>
+        <classMoniker
+          Id="0d7eb364-edcb-487a-bebb-a56e62df85cd"
+          LastKnownName="SceneManager"
+          LastKnownLocation="Package_0053.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -23,6 +35,12 @@
         Id="81b6cee1-1e8a-4a1c-91bb-e906fdee9ff6"
         LastKnownName="SuperCar.Core.Entities"
         LastKnownLocation="Package_2154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="99f3492b-d6be-42c5-962c-a9df62e436c5"
+        LastKnownName="SuperCar.Graphics"
+        LastKnownLocation="Package_0053.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

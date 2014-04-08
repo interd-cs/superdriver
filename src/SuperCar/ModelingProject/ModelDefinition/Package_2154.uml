@@ -53,6 +53,19 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a3c56e0c-411a-4a67-a03c-2be1f00d4405"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -62,10 +75,55 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e35f5445-88ab-43a8-a4fc-65535e404a48">
+            <interfaceMoniker
+              Id="68321031-8fdc-4a5a-9c36-dbf713051e10"
+              LastKnownName="IVehicle"
+              LastKnownLocation="Package_2154.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="3c831c31-4047-4155-bade-1ca596498fae"
-            name="Speed"
+            name="CurrentSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+                LastKnownName="int"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b2169f4c-2251-4481-b716-14030175fa2c"
+            name="MaxSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+                LastKnownName="int"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="026337dd-7acb-4fc7-9a59-5730492e35d1"
+            name="Position"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -74,6 +132,42 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="ba98ce83-57c0-4ea2-bbaa-c24ca30182aa"
+            name="Model"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="121aa08d-9389-47b4-b6a1-350004fcb7aa"
+                LastKnownName="string"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9b4a650f-726b-4123-842a-cdd78bc97ce7"
+            name="Branch"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="121aa08d-9389-47b4-b6a1-350004fcb7aa"
+                LastKnownName="string"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -113,6 +207,555 @@
               LastKnownLocation="Package_2154.uml" />
           </generalization>
         </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="68321031-8fdc-4a5a-9c36-dbf713051e10"
+        name="IVehicle"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="f0261738-bc42-4b26-a794-059953a9dd13"
+            name="SpeedUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d97f87a6-0bd3-419f-a50c-c4b1737a653d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="68321031-8fdc-4a5a-9c36-dbf713051e10"
+                      LastKnownName="IVehicle"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5e29492a-2f72-4bbc-9da3-ceb2b49fe860"
+            name="Break"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a1f3a20-e705-4aa5-8254-469e871864a6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="68321031-8fdc-4a5a-9c36-dbf713051e10"
+                      LastKnownName="IVehicle"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a8f06e66-c327-49c4-a381-91458a07b146"
+            name="Boost"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5b781a4-3357-4d5d-964e-b2d28b9a80b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="68321031-8fdc-4a5a-9c36-dbf713051e10"
+                      LastKnownName="IVehicle"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="121aa08d-9389-47b4-b6a1-350004fcb7aa"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ce21fdec-1c24-4eec-914e-c56c0fc7d732"
+        name="IVehicl" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c19af6c6-7467-4ea9-ab20-986f8b9abc18"
+        LastKnownName="Enum"
+        LastKnownLocation="Package_0029.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="42847c9b-e238-4932-81e4-ab1c26d98e96"
+        name="Track"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="938efe71-0ab2-4a59-a248-d8cc98c970f5"
+            name="Length"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+                LastKnownName="int"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8003be81-f101-4d06-962e-14a71a948451"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="121aa08d-9389-47b4-b6a1-350004fcb7aa"
+                LastKnownName="string"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fb015233-2f83-4302-b6b8-2256a4047b9d"
+        name="GamePlay"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="65d70189-aca3-45ca-b0e7-fde5d67f9751"
+            isDerived="false"
+            sourceEndRoleName="GamePlay"
+            targetEndRoleName="Track"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="42847c9b-e238-4932-81e4-ab1c26d98e96"
+              LastKnownName="Track"
+              LastKnownLocation="Package_2154.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12abd8fe-7a90-4fa6-94b8-e5291fe8fccf"
+                  name="GamePlay"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ffcd26e-4482-4896-b4d6-11a6a774bf96"
+                  name="Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91c583b1-f279-48a5-87a7-5ed5b88f1a91"
+            isDerived="false"
+            sourceEndRoleName="GamePlay"
+            targetEndRoleName="Gamer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eb53bf14-8ed0-440f-b3b7-04368adb4502"
+              LastKnownName="Gamer"
+              LastKnownLocation="Package_2154.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89e54d0f-9df3-4db9-89d4-c3a83075f38d"
+                  name="GamePlay"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7462469c-9b8a-4573-b1aa-cb873ec871f3"
+                  name="Gamer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8fbb89e6-2ead-4781-b239-e40efaf47b23"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8730c878-01b8-4b61-8cef-121483ef4d38"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c715d6f5-77f8-46bc-b4e0-c2f6db5c58f0"
+            name="PlayerAmount"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+                LastKnownName="int"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="43d0f916-d548-43bd-9084-50abb9d105ab"
+            name="Gamers"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="71bb72d3-81b7-43b5-96e5-edf94c241c62"
+                name="Lower"
+                value="PlayerAmount" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="002d3291-30e1-473f-ace6-56777aba1b83"
+                name="Upper"
+                value="PlayerAmount" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="eb53bf14-8ed0-440f-b3b7-04368adb4502"
+                LastKnownName="Gamer"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c6890538-ea71-492c-8f6a-7a00c9edf0df"
+            name="Begin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a6c1bb2-280c-4cb0-93f7-e26a7f7bd0c3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fb015233-2f83-4302-b6b8-2256a4047b9d"
+                      LastKnownName="GamePlay"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7e266181-c3e4-4c34-ab2a-444b8009e01a"
+            name="Finish"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="84cd2fd4-f77e-4c82-8bc5-23499d1bd30a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fb015233-2f83-4302-b6b8-2256a4047b9d"
+                      LastKnownName="GamePlay"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5441b2da-7324-47a9-9ecb-1356566b7f03"
+            name="Pause"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30603fd0-abef-494f-a7c4-2936f51fdbde"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fb015233-2f83-4302-b6b8-2256a4047b9d"
+                      LastKnownName="GamePlay"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="542fbebb-afd3-4db2-bca4-ea60734fefa0"
+            name="Resume"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5845369-0d47-49eb-9dcc-1849a6bdb894"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fb015233-2f83-4302-b6b8-2256a4047b9d"
+                      LastKnownName="GamePlay"
+                      LastKnownLocation="Package_2154.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb53bf14-8ed0-440f-b3b7-04368adb4502"
+        name="Gamer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b3f5fbfb-c803-480f-9ee4-d367b0d1d764"
+            isDerived="false"
+            sourceEndRoleName="Gamer"
+            targetEndRoleName="Player"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="95a7a66a-d181-4909-a170-304e8bdb92e1"
+              LastKnownName="Player"
+              LastKnownLocation="Package_2154.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28ea2a7f-07c0-4ed6-8822-61e752bfde41"
+                  name="Gamer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6938eb4b-813a-4e19-b538-2b695efa6754"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a23a8ea5-9962-493d-ac92-b01b510be48c"
+            isDerived="false"
+            sourceEndRoleName="Gamer"
+            targetEndRoleName="Vehicle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
+              LastKnownName="Vehicle"
+              LastKnownLocation="Package_2154.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06be3dfe-dba8-41ad-bc4a-2597866b5fcd"
+                  name="Gamer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c60de6da-a0ca-4c84-a852-0adef98b3db4"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e2ff1582-a271-4488-bc0b-a3dd30b979ba"
+            isDerived="false"
+            sourceEndRoleName="Gamer"
+            targetEndRoleName="Position"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="b23ed1ae-6b41-4a3f-87a7-9f4a695b7346"
+              LastKnownName="Position"
+              LastKnownLocation="Package_0029.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3debaf67-9eb2-4b2b-8875-85cfb4b045f4"
+                  name="Gamer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="987f7772-aee7-40d5-929f-1cafe2d524c8"
+                  name="Position"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="68f4f5ed-51d4-46e9-ad76-9f2aadc4dc82"
+            name="Score"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a3a6ebc3-ef25-497a-b314-c82fa1c374be"
+                LastKnownName="int"
+                LastKnownLocation="Package_2154.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
