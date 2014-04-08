@@ -16,13 +16,13 @@
             Id="b08785f8-b27c-4ddd-97c9-84c013051e19"
             isDerived="false"
             sourceEndRoleName="Player"
-            targetEndRoleName="Car"
+            targetEndRoleName="Vehicle"
             isLeaf="false"
             name="Has a"
             isAbstract="false">
             <classMoniker
               Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
-              LastKnownName="Car"
+              LastKnownName="Vehicle"
               LastKnownLocation="Package_2154.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -41,7 +41,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad"
-                  name="Car"
+                  name="Vehicle"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -58,10 +58,24 @@
     <packageHasNamedElement>
       <class
         Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
-        name="Car"
+        name="Vehicle"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="3c831c31-4047-4155-bade-1ca596498fae"
+            name="Speed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class

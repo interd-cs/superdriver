@@ -23,8 +23,8 @@
             <class Id="616ff213-2e48-4544-a575-71a368d4e433" name="Player" isAbstract="true" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="95a7a66a-d181-4909-a170-304e8bdb92e1" />
               <targetEnds>
-                <association Id="3eaf560b-a08e-494b-b080-33cdaed1e8df" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Car" isLeaf="false" name="Has a" isAbstract="false">
-                  <classMoniker Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" LastKnownName="Car" />
+                <association Id="3eaf560b-a08e-494b-b080-33cdaed1e8df" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Vehicle" isLeaf="false" name="Has a" isAbstract="false">
+                  <classMoniker Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" LastKnownName="Vehicle" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="04a854c4-649e-4fe0-a55d-a9636ddff91c" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -32,7 +32,7 @@
                       </memberEnd>
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
-                      <memberEnd Id="469a3346-3a7b-4fe0-9146-ca30894d3b28" name="Car" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <memberEnd Id="469a3346-3a7b-4fe0-9146-ca30894d3b28" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -43,8 +43,13 @@
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" name="Vehicle" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c" />
+              <ownedAttributesInternal>
+                <property Id="c2cde351-4797-41d2-a15a-774e7b8bcbed" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3c831c31-4047-4155-bade-1ca596498fae" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
