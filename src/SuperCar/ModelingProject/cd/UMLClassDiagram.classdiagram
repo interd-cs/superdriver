@@ -9,20 +9,6 @@
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="fed78436-e063-49c4-98e6-fa429d9f09cf">
-      <profileInstance Id="a7a8dd06-2538-4ab3-b3e4-22e7d5856b5b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6a892945-4b07-497a-aaa2-59088f59b6b9">
-      <profileInstance Id="2733882a-703a-4fda-814e-c9cbcec7ebf8" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="86513137-100e-4642-9f55-c03125b8bef8" name="SuperCar.Core.Entities">
@@ -31,24 +17,6 @@
           <packageHasNamedElement>
             <class Id="616ff213-2e48-4544-a575-71a368d4e433" name="Player" isAbstract="true" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="95a7a66a-d181-4909-a170-304e8bdb92e1" />
-              <targetEnds>
-                <association Id="3eaf560b-a08e-494b-b080-33cdaed1e8df" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Vehicle" isLeaf="false" name="Has a" isAbstract="false">
-                  <classMoniker Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" LastKnownName="Vehicle" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="04a854c4-649e-4fe0-a55d-a9636ddff91c" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="e656d52e-839e-447a-9e85-3b322092677c" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="469a3346-3a7b-4fe0-9146-ca30894d3b28" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="b08785f8-b27c-4ddd-97c9-84c013051e19" />
-                </association>
-              </targetEnds>
               <ownedAttributesInternal>
                 <property Id="a69e9036-e97b-44b3-a8e8-e21b7dcd9b24" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="a3c56e0c-411a-4a67-a03c-2be1f00d4405" />
@@ -210,7 +178,7 @@
             <class Id="cd298843-7485-4360-a652-2ffc30aade03" name="GamePlay" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="fb015233-2f83-4302-b6b8-2256a4047b9d" />
               <targetEnds>
-                <association Id="f2c9c508-42b4-46cb-addc-43437682de14" isDerived="false" sourceEndRoleName="GamePlay" targetEndRoleName="Track" isLeaf="false" isAbstract="false">
+                <association Id="f2c9c508-42b4-46cb-addc-43437682de14" isDerived="false" sourceEndRoleName="GamePlay" targetEndRoleName="Track" isLeaf="false" name="Is Played In" isAbstract="false">
                   <classMoniker Id="c1a438c4-27ba-4dd4-90b6-376345f33f0c" LastKnownName="Track" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -226,7 +194,7 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="65d70189-aca3-45ca-b0e7-fde5d67f9751" />
                 </association>
-                <association Id="cb820845-c510-4d59-b8f3-23dcaec291a2" isDerived="false" sourceEndRoleName="GamePlay" targetEndRoleName="Gamer" isLeaf="false" isAbstract="false">
+                <association Id="cb820845-c510-4d59-b8f3-23dcaec291a2" isDerived="false" sourceEndRoleName="GamePlay" targetEndRoleName="Gamer" isLeaf="false" name="Has" isAbstract="false">
                   <classMoniker Id="5bb9a214-aa6e-4713-acc5-f616bfbb292d" LastKnownName="Gamer" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -337,7 +305,7 @@
             <class Id="5bb9a214-aa6e-4713-acc5-f616bfbb292d" name="Gamer" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="eb53bf14-8ed0-440f-b3b7-04368adb4502" />
               <targetEnds>
-                <association Id="a814dd0f-4661-48e9-a414-3d74a646d0da" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Player" isLeaf="false" isAbstract="false">
+                <association Id="a814dd0f-4661-48e9-a414-3d74a646d0da" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Player" isLeaf="false" name="Has" isAbstract="false">
                   <classMoniker Id="616ff213-2e48-4544-a575-71a368d4e433" LastKnownName="Player" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -353,7 +321,7 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="b3f5fbfb-c803-480f-9ee4-d367b0d1d764" />
                 </association>
-                <association Id="53896793-ef6e-42cc-9a3c-3e92cc6546d2" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Vehicle" isLeaf="false" isAbstract="false">
+                <association Id="53896793-ef6e-42cc-9a3c-3e92cc6546d2" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Vehicle" isLeaf="false" name="Has" isAbstract="false">
                   <classMoniker Id="03d06e05-0651-4d64-9baf-b72b3c7baba9" LastKnownName="Vehicle" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -369,7 +337,7 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="a23a8ea5-9962-493d-ac92-b01b510be48c" />
                 </association>
-                <association Id="08f2e799-c481-4c2a-a699-4c3bcc8c5ee9" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Position" isLeaf="false" isAbstract="false">
+                <association Id="08f2e799-c481-4c2a-a699-4c3bcc8c5ee9" isDerived="false" sourceEndRoleName="Gamer" targetEndRoleName="Position" isLeaf="false" name="Has" isAbstract="false">
                   <enumerationMoniker Id="94691799-6a84-421d-8e8c-7fbda5a86153" LastKnownName="Position" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
@@ -598,5 +566,19 @@
   </packagedElements>
   <package Id="0c520961-977c-495e-ab4b-4b5f740f1c5e" name="ModelingProject">
     <elementDefinition Id="5f4d58e4-6075-48d9-a5e2-c01ff78390d2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fed78436-e063-49c4-98e6-fa429d9f09cf">
+        <profileInstance Id="a7a8dd06-2538-4ab3-b3e4-22e7d5856b5b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6a892945-4b07-497a-aaa2-59088f59b6b9">
+        <profileInstance Id="2733882a-703a-4fda-814e-c9cbcec7ebf8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

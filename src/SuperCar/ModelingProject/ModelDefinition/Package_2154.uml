@@ -11,48 +11,6 @@
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="b08785f8-b27c-4ddd-97c9-84c013051e19"
-            isDerived="false"
-            sourceEndRoleName="Player"
-            targetEndRoleName="Vehicle"
-            isLeaf="false"
-            name="Has a"
-            isAbstract="false">
-            <classMoniker
-              Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
-              LastKnownName="Vehicle"
-              LastKnownLocation="Package_2154.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e656d52e-839e-447a-9e85-3b322092677c"
-                  name="Player"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bbfde0a6-929b-45e7-87a6-9bd644bdd1ad"
-                  name="Vehicle"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="a3c56e0c-411a-4a67-a03c-2be1f00d4405"
@@ -373,6 +331,7 @@
             sourceEndRoleName="GamePlay"
             targetEndRoleName="Track"
             isLeaf="false"
+            name="Is Played In"
             isAbstract="false">
             <classMoniker
               Id="42847c9b-e238-4932-81e4-ab1c26d98e96"
@@ -412,6 +371,7 @@
             sourceEndRoleName="GamePlay"
             targetEndRoleName="Gamer"
             isLeaf="false"
+            name="Has"
             isAbstract="false">
             <classMoniker
               Id="eb53bf14-8ed0-440f-b3b7-04368adb4502"
@@ -624,6 +584,7 @@
             sourceEndRoleName="Gamer"
             targetEndRoleName="Player"
             isLeaf="false"
+            name="Has"
             isAbstract="false">
             <classMoniker
               Id="95a7a66a-d181-4909-a170-304e8bdb92e1"
@@ -663,6 +624,7 @@
             sourceEndRoleName="Gamer"
             targetEndRoleName="Vehicle"
             isLeaf="false"
+            name="Has"
             isAbstract="false">
             <classMoniker
               Id="9fa0e5a9-834c-4d09-b32a-7a03d3882b0c"
@@ -702,6 +664,7 @@
             sourceEndRoleName="Gamer"
             targetEndRoleName="Position"
             isLeaf="false"
+            name="Has"
             isAbstract="false">
             <enumerationMoniker
               Id="b23ed1ae-6b41-4a3f-87a7-9f4a695b7346"
